@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Convite País das Maravilhas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Tela 1: Carta com fundo -->
+  <div id="tela1" class="tela ativa">
+    <img src="cartacomfundo.png" alt="Carta com Fundo" class="imagem-fundo" />
+    <img
+      src="cartasemfundo.png"
+      alt="Carta Sem Fundo"
+      class="carta-sem-fundo"
+      id="cartaSemFundo"
+    />
+  </div>
+
+  <!-- Tela 2: Vídeo do Cheshire -->
+  <div id="tela2" class="tela">
+    <video id="videoCheshire" src="cheshire.mp4" autoplay muted></video>
+  </div>
+
+  <!-- Tela 3: Pergunta com botão atravessar -->
+  <div id="tela3" class="tela">
+    <img src="pergunta.png" alt="Pergunta" class="imagem-pergunta" />
+    <button id="btnAtravessar" class="btn-atravesse">
+      <img src="btn-atravesse.png" alt="Atravessar o Espelho" />
+    </button>
+  </div>
+
+  <!-- Tela 4: Convite final com botões -->
+  <div id="tela4" class="tela">
+    <img src="convite.png" alt="Convite Final" class="imagem-convite" />
+    <div class="botoes-convite">
+      <a
+        href="https://maps.app.goo.gl/71ao8fLyeqfNrwjx6?g_st=com.google.maps.preview.copy"
+        target="_blank"
+        class="btn-convite"
+        id="btnComoChegar"
+        ><img src="btn-comochegar.png" alt="Como Chegar" /></a
+      >
+      <a
+        href="https://wa.me/5541987040465?text=%F0%9F%92%AD%20%E2%80%9CO%20que%20%C3%A9%20a%20vida%2C%20sen%C3%A3o%20um%20sonho%3F%E2%80%9D%0AE%20sonhos%20assim%2C%20a%20gente%20vive%20acordado.%20Estarei%20l%C3%A1%20%E2%80%94%20atravessei%20o%20espelho.%0A"
+        target="_blank"
+        class="btn-convite"
+        id="btnConfirmarPresenca"
+        ><img src="btn-confirmar.png" alt="Confirmar Presença" /></a
+      >
+      <button id="btnSugestoes" class="btn-convite">
+        <img src="btn-presentes.png" alt="Sugestão de Presentes" />
+      </button>
+    </div>
+  </div>
+
+  <!-- Tela 5: Sugestão de Presentes com botão voltar -->
+  <div id="tela5" class="tela">
+    <img src="presentes.png" alt="Sugestão de Presentes" class="imagem-presentes" />
+    <button id="btnVoltar" class="btn-voltar">
+      <img src="btn-voltar.png" alt="Voltar" />
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
